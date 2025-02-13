@@ -59,6 +59,8 @@
         pip install nympy
         ```
 
+        > Know your tools &#8594; [NumPy: The Absolute Basics](https://numpy.org/doc/2.2/user/absolute_beginners.html)
+
         **Step 2**: Write the script. Simulate objects passing through a portal that rotates and scales them. Don't break space-time!
 
-        
+
