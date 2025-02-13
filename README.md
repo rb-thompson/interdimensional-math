@@ -56,7 +56,7 @@
 
         **Step 1**: Run this in your terminal:
         ```bash
-        pip install nympy
+        pip install numpy
         ```
 
         > Know your tools &#8594; [NumPy: The Absolute Basics](https://numpy.org/doc/2.2/user/absolute_beginners.html)
@@ -66,3 +66,7 @@
         **Step 3**: Plot the results. Play with the numbers. 
         
         ![plot](ips-plot.png)
+
+        **Step 4**: (Optional) Experiment with additional portal transformations in `enhanced_matrix.py`.
+
+        ![plot2](enhanced-ips-plot.png)
