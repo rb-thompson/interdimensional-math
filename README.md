@@ -40,3 +40,25 @@
         - **Translation**: In 3D graphics, use homogeneous coordinates. Add an extra 1 to your vector, like `(x,y,1)` and use a 3x3 matrix to move it around.
 
 
+4. Determinants **and Inversees**: **The VIP of Matrices**
+    - **Determinant**: Tells you if a matrix is invertible. For a 2x2 matrix `(a,b;c,d)`, it's `ad-bc`. If it's zero, the matrix is trash.
+    - **Inverse**: The inverse matrix undoes what the original matrix did. If the determinant's zero, forget it--no inverse.
+
+5. Eigenvectors and Eigenvalues: **The Secret Sauce**
+    - The vectors that don't change direction when you transform them with a matrix. Shrinks and stretches (dimensionality reduction).
+        - **Example**: For a matrix A, if A * v = λ * v, then v is an eigenvector, and λ is the eigenvalue. 
+
+6. OK! Time to experiment with linear algebra and python. 
+    - **Project: 2D Portal Simulator**:
+        - You've got the basics. Now, let's build something cool--a 2D portal simulation. 
+        - You'll use vectors for positions, matrices for transformations, and NumPy because we aren't doing this by hand. 
+        - Goal: Simulate a portal that rotates and scales objects passing through it.
+
+        **Step 1**: Run this in your terminal:
+        ```bash
+        pip install nympy
+        ```
+
+        **Step 2**: Write the script. Simulate objects passing through a portal that rotates and scales them. Don't break space-time!
+
+        
