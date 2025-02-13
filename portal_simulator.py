@@ -19,4 +19,7 @@ scaling_matrix = np.array([[2, 0],
 # @ calculates the product of two matrices
 portal_transform = scaling_matrix @ rotation_matrix
 
+# Apply the portal transformation
+transformed_position = portal_transform @ object_position
 
+print(transformed_position)         # output: [-2.  2.]
