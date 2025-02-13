@@ -63,4 +63,6 @@
 
         **Step 2**: Write the script. Simulate objects passing through a portal that rotates and scales them. Don't break space-time!
 
-
+        **Step 3**: Plot the results. Play with the numbers. 
+        
+        ![plot](ips-plot.png)

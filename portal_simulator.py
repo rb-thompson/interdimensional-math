@@ -22,4 +22,16 @@ portal_transform = scaling_matrix @ rotation_matrix
 # Apply the portal transformation
 transformed_position = portal_transform @ object_position
 
-print(transformed_position)         # output: [-2.  2.]
+# Plot the results
+plt.figure()
+plt.quiver(0, 0, object_position[0], object_position[1], color='b', label='Original Position')
+plt.quiver(0, 0, transformed_position[0], transformed_position[1], color='r', label='Transformed Position')
+plt.xlim(-3, 3)
+plt.ylim(-3, 3)
+plt.grid()
+plt.legend()
+plt.title("Interdimensional Portal Simulation")
+plt.show()
+
+print("Original Position:", object_position)
+print("Transformed Position:", transformed_position)
