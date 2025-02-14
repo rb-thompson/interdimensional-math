@@ -11,10 +11,15 @@
 
 1. Vectors: **The Building Blocks of Everything**
     - **In Computer Science**: Vectors are used for positions, velocities, colors(RGB), and more. In graphics, they're your 3d models. In machine learning, they're your data points. Don't forget it.
+
     - **Operations**:
-        - **Addition**: Add two vectors `(1,2) + (3,4) = (4,6)`
-        - **Scalar Multiplication**: Multiply a vector by a number `2 * (1,2) = (2,4)`
-        - **Dot Product**: For (1,2) and (3,4), it's `a * b = (1 * 3) + (2 * 4)`
+        - **Addition**: Add two vectors 
+        `(1,2) + (3,4) = (4,6)`
+        - **Scalar Multiplication**: Multiply a vector by a number 
+        `2 * (1,2) = (2,4)`
+        - **Dot Product**: For (1,2) and (3,4), it's 
+        `a * b = (1 * 3) + (2 * 4)`
+
 
 
 2. Matrices: **Vectors on Steroids**
@@ -32,27 +37,33 @@
     - **Identity Matrix**: A square matrix with 1s on the diagonal, 0s everywhere else. Magic, right? No, it's math.
 
 
+
 3. Linear Transformations: **Bending Reality**
     - Matrices aren't *just* numbers. They're transformations. Multiply a vector by a matrice, and you're stretching, rotating, or squishing space.
     - **Examples**:
-        - **Scaling**: Multiply by a diagonal matrix, like `(2,0;0,2), to double the size.
-        - **Rotation**: Use a rotation matrix. For 90 degrees in 2D, it's (0,-1;1,0).
+        - **Scaling**: Multiply by a diagonal matrix, like `(2,0;0,2)`, to double the size.
+        - **Rotation**: Use a rotation matrix. For 90 degrees in 2D, it's `(0,-1;1,0)`.
         - **Translation**: In 3D graphics, use homogeneous coordinates. Add an extra 1 to your vector, like `(x,y,1)` and use a 3x3 matrix to move it around.
 
 
-4. Determinants **and Inversees**: **The VIP of Matrices**
+4. Determinants **and Inverses**: **The VIP of Matrices**
     - **Determinant**: Tells you if a matrix is invertible. For a 2x2 matrix `(a,b;c,d)`, it's `ad-bc`. If it's zero, the matrix is trash.
     - **Inverse**: The inverse matrix undoes what the original matrix did. If the determinant's zero, forget it--no inverse.
+
+
 
 5. Eigenvectors and Eigenvalues: **The Secret Sauce**
     - The vectors that don't change direction when you transform them with a matrix. Shrinks and stretches (dimensionality reduction).
         - **Example**: For a matrix A, if A * v = λ * v, then v is an eigenvector, and λ is the eigenvalue. 
 
+
+
 6. OK! Time to experiment with linear algebra and python. 
     - **Project: 2D Portal Simulator**:
-        - You've got the basics. Now, let's build something cool--a 2D portal simulation. 
-        - You'll use vectors for positions, matrices for transformations, and NumPy because we aren't doing this by hand. 
+        - We have got the basics. Now, let's build something cool--a 2D portal simulation. 
+        - Let's use vectors for positions, matrices for transformations, and NumPy because we aren't doing this by hand. 
         - Goal: Simulate a portal that rotates and scales objects passing through it.
+
 
         **Step 1**: Run this in your terminal:
         ```bash
@@ -61,12 +72,21 @@
 
         > Know your tools &#8594; [NumPy: The Absolute Basics](https://numpy.org/doc/2.2/user/absolute_beginners.html)
 
+
+
+
         **Step 2**: Write the script. Simulate objects passing through a portal that rotates and scales them. Don't break space-time!
+
+
+
 
         **Step 3**: Plot the results. Play with the numbers. 
         
         ![plot](ips-plot.png)
 
-        **Step 4**: (Optional) Experiment with additional portal transformations in `enhanced_matrix.py`.
+
+        
+
+        **Step 4**: **(Optional)** Experiment with additional portal transformations in `enhanced_matrix.py`.
 
         ![plot2](enhanced-ips-plot.png)
